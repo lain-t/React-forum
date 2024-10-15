@@ -1,0 +1,23 @@
+.user {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .user-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-info {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc; /* 分隔线 */
+  }
+  
+  .user-posts {
+    flex: 2;
+    padding: 20px;
+  }

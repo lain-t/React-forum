@@ -1,0 +1,53 @@
+#forumTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  #forumTable th {
+    background-color: #42b983;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #forumTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #forumTable td:first-child,
+  #forumTable th:first-child {
+    width: 70%;
+  }
+  
+  #forumTable td:last-child,
+  #forumTable th:last-child {
+    width: 25%;
+  }
+  
+  #forumTable td a {
+    color: #42b983;
+    text-decoration: none;
+  }
+  
+  #forumTable td a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 条纹效果 */
+  #forumTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* 鼠标悬停效果 */
+  #forumTable tr:hover {
+    background-color: #f1f1f1;
+  }

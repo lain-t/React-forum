@@ -1,0 +1,19 @@
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    background-color: #f8f8f8;
+}
+.user-header-right,
+.user-header-left,
+.user-loginIn,
+.user-loginOut {
+    display: flex;
+    align-items: center;
+}
+.user-loginIn *,
+.user-loginOut * {
+    padding-inline: 2px;
+}

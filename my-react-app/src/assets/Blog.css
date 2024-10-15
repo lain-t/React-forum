@@ -1,0 +1,17 @@
+/* Blog.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    color: var(--primary-color);
+    font-size: var(--title-font-size);
+  }
+  
+  .subtitle {
+    color: var(--secondary-color);
+    font-size: var(--subtitle-font-size);
+  }
