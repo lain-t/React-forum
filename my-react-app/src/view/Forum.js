@@ -14,13 +14,14 @@ const Forum = () => {
       const userdata = localStorage.getItem('userdata');
       if (userdata) {
         const userData = JSON.parse(userdata);
+        console.log('用户数据:', userData);
         setUsername(userData.username);
-        setPost({ ...post, author: userData.username });
+        // setPost({ ...post, author: userData.username });
       }
     };
 
     loadUser();
-  }, [post]);
+  }, []);
 
   useEffect(() => {
     const loadPosts = async () => {

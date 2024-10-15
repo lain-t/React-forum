@@ -10,13 +10,14 @@ const Register = () => {
   });
   const history = useNavigate();
 
-  const handleRegister = () => {
+  const handleRegister = (event) => {
+    event.preventDefault();
     axios.post("/user/register", user)
       .then(response => {
         const userdata = response.data;
         localStorage.setItem('userdata', JSON.stringify(userdata));
         console.log('注册成功:', response.data);
-        history.push('/home'); // 假设主页路由是 '/home'
+        history('/');
       })
       .catch(error => {
         console.error('注册失败:', error);

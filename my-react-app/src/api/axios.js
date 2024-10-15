@@ -2,8 +2,8 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://192.168.0.5:8081',
-  headers: {'Content-Type': 'application/json'},
+  baseURL: 'http://127.0.0.1:5000',
+  headers: {'Content-Type': 'application/json;charset=utf-8'},
   timeout: 7000,
 });
 

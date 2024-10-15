@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NotFound from './pages/NotFound';
 
 import Forum from './view/Forum';
-import Header from './components/UserHeader';
+// import Header from './components/UserHeader';
 import User from './view/User'; // 确保路径正确
 import UserInfo from './components/UserInfo'; // 确保路径正确
 import UserPosts from './components/UserPosts'; // 确保路径正确
