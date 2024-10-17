@@ -6,10 +6,6 @@
 
 技术栈：
 
-前端：
+前端：Node，React，React-router-dom，axios
 
-Node，React，React-router-dom，axios
-
-后端：
-
-Python，Flask，Mysql
+后端：Python，Flask，Mysql
