@@ -1,4 +1,3 @@
-# user_service.py
 from Mapper.UserMapper import UserMapper
 class UserService:
     def __init__(self, config):
@@ -21,13 +20,3 @@ class UserService:
 
     def delete_user(self, id):
         self.user_mapper.delete_by_id(id)
-    
-# user_convert.py
-class UserConvert:
-    @staticmethod
-    def user_to_detail_vo(user_do):
-        # Conversion logic here
-        return {
-            "username": user_do[0][1],  # 使用 get 方法安全地访问键
-            # Add other fields as needed
-        }

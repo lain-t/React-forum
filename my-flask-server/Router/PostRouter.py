@@ -70,9 +70,9 @@ def show_posts():
 @post_blueprint.route('/pages/author', methods=['POST'])
 def show_posts_by_author():
     data = request.get_json()
-    author = data['author']
+    author = data['username']
     try:
-        posts = post_service.find_post_by_author(author)
+        posts = post_service.find_posts_by_author(author)
         if posts:
             return make_response(jsonify([post.__dict__ for post in posts]), 200)
         else:

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { apiClient as axios } from '../api/axios'
-import UserHeader from '../components/UserHeader'; // 确保路径正确
-import UserInfo from '../components/UserInfo'; // 确保路径正确
-import UserPosts from '../components/UserPosts'; // 确保路径正确
+import UserInfo from '../components/UserInfo'; 
+import UserPosts from '../components/UserPosts';
 import { Link } from 'react-router-dom';
-import '../assets/User.css'; // 引入单独的CSS文件
+import '../assets/User.css';
 
 const User = () => {
   const [user, setUser] = useState({
@@ -19,6 +18,7 @@ const User = () => {
     registrationDate: '',
   });
   const [userPosts, setUserPosts] = useState([]);
+  // 设置隐藏
   const [isSetting, setIsSetting] = useState(true);
 
   useEffect(() => {
@@ -42,7 +42,6 @@ const User = () => {
 
   return (
     <div className="user">
-      <UserHeader isSetting={isSetting} />
       <div className="user-content">
         <h1>用户页面</h1>
         <UserInfo user={user} />

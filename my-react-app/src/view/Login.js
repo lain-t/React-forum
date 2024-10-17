@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { apiClient as axios } from '../api/axios'
 import { useNavigate } from 'react-router-dom';
-import ToHome from '../components/ToHome'; // 确保路径正确
+import ToHome from '../components/ToHome';
 
 const Login = () => {
   const [user, setUser] = useState({

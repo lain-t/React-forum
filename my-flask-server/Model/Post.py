@@ -1,4 +1,3 @@
-# 假设PostDO是一个数据模型类，你需要根据实际情况来定义它
 class PostDO:
     def __init__(self, id, title, author, content, date):
         self.id = id

@@ -1,4 +1,3 @@
-# post_service.py
 from Mapper.PostMapper import PostMapper
 from Model.Post import PostDO
 

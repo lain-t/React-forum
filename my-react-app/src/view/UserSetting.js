@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { apiClient as axios } from '../api/axios'
-import ToHome from '../components/ToHome'; // 确保路径正确
+import ToHome from '../components/ToHome';
 
 const UserSetting = () => {
   const [user, setUser] = useState({

@@ -3,22 +3,22 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NotFound from './pages/NotFound';
 
 import Forum from './view/Forum';
-// import Header from './components/UserHeader';
-import User from './view/User'; // 确保路径正确
-import UserInfo from './components/UserInfo'; // 确保路径正确
-import UserPosts from './components/UserPosts'; // 确保路径正确
-import UserSetting from './view/UserSetting'; // 确保路径正确
-import Login from './view/Login'; // 确保路径正确
-import Quit from './view/Quit'; // 确保路径正确
-import Register from './view/Register'; // 确保路径正确
-import Post from './view/Post'; // 确保路径正确
+import Header from './components/UserHeader';
+import User from './view/User';
+import UserInfo from './components/UserInfo';
+import UserPosts from './components/UserPosts';
+import UserSetting from './view/UserSetting';
+import Login from './view/Login';
+import Quit from './view/Quit';
+import Register from './view/Register';
+import Post from './view/Post';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
     <Router>
       <div>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<Forum />} />
           <Route path="/user" element={<User />}>

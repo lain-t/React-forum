@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // 引入react-router-dom中的Link和useLocation
-import '../assets/UserHeader.css'; // 引入Header.css文件
-
-const ToHome = () => {
-  // 这里应该是ToHome组件的React版本
-  // ...
-  return <div>Home</div>;
-};
+import { Link, useLocation } from 'react-router-dom';
+import '../assets/UserHeader.css';
+import ToHome from './ToHome';
 
 const UserHeader = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,7 +23,6 @@ const UserHeader = () => {
 
   const logout = () => {
     localStorage.removeItem('userdata');
-    // 重定向到首页
     window.location = '/';
   };
 
@@ -39,7 +33,6 @@ const UserHeader = () => {
           <span>{isLoggedIn ? `欢迎, ${username}` : ''}</span>
         </div>
         <div className="user-loginOut">
-          {/* 登出时显示的内容 */}
         </div>
       </div>
 

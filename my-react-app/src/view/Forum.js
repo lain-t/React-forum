@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { apiClient as axios } from '../api/axios'
-import UserHeader from '../components/UserHeader'; // 假设UserHeader组件已经转换为React
-import UserPosts from '../components/UserPosts'; // 假设UserPosts组件已经转换为React
-import '../assets/Forum.css'; // 引入单独的CSS文件
+import UserPosts from '../components/UserPosts';
+import '../assets/Forum.css';
 
 const Forum = () => {
   const [username, setUsername] = useState('');
@@ -51,7 +50,6 @@ const Forum = () => {
 
   return (
     <div>
-      <UserHeader />
       <div className="forum">
         <h1>论坛主页</h1>
         <UserPosts posts={posts} />

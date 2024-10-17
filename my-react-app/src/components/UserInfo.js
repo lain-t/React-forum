@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/UserInfo.css'; // 引入CSS文件
+import '../assets/UserInfo.css';
 
 const UserInfo = ({ user }) => {
   return (

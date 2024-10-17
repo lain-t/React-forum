@@ -18,7 +18,7 @@ class PostMapper:
         self.sql.execute_query(query, (post_do.title, post_do.content, post_do.author, post_do.id))
 
     def select_list(self, query, params=None):
-        return self.sql.execute_query(query, params)
+        return self.sql.select_query(query, params)
 
     def delete_by_id(self, id):
         query = "DELETE FROM posts WHERE id=%s"

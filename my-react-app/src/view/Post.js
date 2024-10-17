@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { apiClient as axios } from '../api/axios'
-import UserHeader from '../components/UserHeader'; // 确保路径正确
-import '../assets/Post.css'; // 引入单独的CSS文件
+import '../assets/Post.css';
 import { useParams } from 'react-router-dom';
 
 const Post = () => {
-  const { postIndex } = useParams(); // 使用 useParams 钩子获取路由参数
+  const { postIndex } = useParams();
   const [post, setPost] = useState({
     id: postIndex,
     title: '',
@@ -77,7 +76,6 @@ const Post = () => {
 
   return (
     <div className="post">
-      <UserHeader />
       <h1>{post.title}</h1>
       <h3>作者：{post.author}</h3>
       <p>发布时间：{post.date}</p>

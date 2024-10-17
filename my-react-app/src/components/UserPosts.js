@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/UserPosts.css'; // 引入单独的CSS文件
+import '../assets/UserPosts.css';
 
 const UserPosts = ({ posts }) => {
   return (

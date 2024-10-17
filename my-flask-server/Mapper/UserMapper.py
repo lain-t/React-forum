@@ -6,8 +6,7 @@ class UserMapper:
 
     def select_one(self, query, params):
         results = self.sql.select_query(query, params)
-        print(results)
-        return results if results else None
+        return results[0] if results else None
 
     def insert(self, user_do):
         query = "INSERT INTO users (username, password) VALUES (%s, %s)"

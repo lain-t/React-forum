@@ -6,7 +6,7 @@ class WebMySQL:
         self.config = config
         self.db = self.connect_db()
         if self.db:
-            self.cursor = self.db.cursor(buffered=True)  # 关闭字典模式
+            self.cursor = self.db.cursor(buffered=True,dictionary=True)#字典模式
 
     def connect_db(self):
         try:
@@ -24,7 +24,7 @@ class WebMySQL:
                 self.cursor.execute(query)
             self.db.commit()
             # 对于增删改操作，返回受影响的行数
-            # return self.cursor.rowcount
+            return self.cursor.rowcount
         except Error as e:
             print(f"Error executing query: {e}")
             self.db.rollback()
@@ -33,12 +33,10 @@ class WebMySQL:
     def select_query(self, query, params=None):
         try:
             if params:
-                print(query, params)
                 self.cursor.execute(query, params)
             else:
                 self.cursor.execute(query)
             results = self.cursor.fetchall()
-            print(results)
             return results
         except Error as e:
             print(f"Error executing query: {e}")
